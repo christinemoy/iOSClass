@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GAViewController : UIViewController
+@interface GAViewController : UIViewController <UITextFieldDelegate>
+
+
+@property (strong, nonatomic) IBOutlet UILabel *myLabel;
+
+@property (strong, nonatomic) IBOutlet UITextField *myTextOne;
+
+- (IBAction)myButtonPressed:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutlet UIButton *myButton;
 
 @end
