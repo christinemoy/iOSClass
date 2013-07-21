@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GASecondViewController.h"
 
 @interface GAViewController : UIViewController <UITextFieldDelegate>
 

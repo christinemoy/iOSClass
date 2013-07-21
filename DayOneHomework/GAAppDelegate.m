@@ -18,6 +18,13 @@
     // Override point for customization after application launch.
     self.viewController = [[GAViewController alloc] initWithNibName:@"GAViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
+    
+    //ADD NAVIGATION
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: self.viewController];
+    
+    self.window.rootViewController = navController;
+    //END NAVIGATION
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
